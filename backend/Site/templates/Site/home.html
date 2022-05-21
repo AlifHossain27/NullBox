@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+{% extends 'Site/base.html' %}
+{% block content %}
+
+<h1>
+<py-script> 
+def is_working(greet:str,name:str)->str:
+    return f'{greet}, {name}'
+
+is_working('Hello','World')
+</py-script>
+
+{% endblock content %}
